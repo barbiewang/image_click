@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hua Cheng</title>
+</head>
+<body>
+  <div id="container">
+      <div id = "leftSide">
+          <ul id="imageList"></ul>
+          <div id = "admin">
+              <button value = "submit" id = "adminBtn">admin</button>
+          </div>
+      </div>
+      <figure id = "baby" class="figure">
+          <figcaption id = "baby-name"></figcaption>
+          <img id = "baby-image" src="" alt = "image" />
+          <canvas id = "baby-count"></canvas>
+      </figure>
+  </div>
+
+
+<!--   <script>
+       var canvasArray = document.getElementsByTagName("canvas");
+       var imgArray = document.getElementsByTagName("img");
+       var numArray = new Array(2);
+
+       function  main () {
+           addClickListeners(canvasArray, imgArray, numArray);
+           addRadioCheckListeners();
+           showSelectedImage();
+       }
+
+       function addRadioCheckListeners() {
+           var radios = document.getElementsByName("date");
+           for(var i=0;i<radios.length;i++){
+               var radio = radios[i];
+               radio.onclick = function() {
+                   showSelectedImage();
+               };
+           }
+       }
+       function  addClickListeners(canvasArray, imgArray, numArray) {
+           for(var i = 0;i<imgArray.length;i++) {
+               var image = imgArray[i];
+               image.setAttribute("idx",i);
+               numArray[i] = 0;
+               image.addEventListener("click", function () {
+                   var idx = this.getAttribute("idx");
+                   var canvas = canvasArray[idx];
+                   var ctx = canvas.getContext('2d');
+                   numArray[idx] = numArray[idx] + 1;
+                   ctx.clearRect(0, 0, canvas.width, canvas.height);
+                   ctx.font = "50px Arial";
+                   ctx.fillText("点赞： "+numArray[idx], 50, 100);
+               });
+           }
+       }
+
+       function getValue(){
+            var listImages = document.getElementsByName("date");
+           for(var i=0;i<listImages.length;i++){
+               var listImage = listImages[i];
+               if(listImage.checked){
+                   return listImage.attributes["value"].value;
+               }
+           }
+       }
+
+       function showSelectedImage(){
+           var showImages = document.getElementsByClassName("figure");
+           var selectedRadioValue = getValue();
+           for(var j = 0;j<showImages.length;j++){
+               if( showImages[j].attributes["id"].value == selectedRadioValue){
+                   showImages[j].style.display = "block";
+               } else {
+                   showImages[j].style.display = "none";
+               }
+           }
+       }
+
+       main();
+   </script>
+   -->
+<link  rel="stylesheet" type="text/css" href = "css/main.css" />
+<script src="js/main.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+</body>
+</html>

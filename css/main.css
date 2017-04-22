@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:whitesmoke;
+}
+canvas{
+    position:relative;
+    border:1px solid black;
+}
+#container{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+#imageList{
+    list-style:none;
+}
+.eachInput{
+    margin-top:30px;
+    padding:10px;
+}
+
+#baby-count{
+    width:200px;
+    height:100px;
+    border:none;
+}
+
+button{
+    margin:20px;
+    font-size:20px;
+}
+#admin div{
+
+}
+#admin .input-line{
+    /*margin-top:20px;*/
+    padding:10px;
+}
+
+#admin .input-hint {
+    margin-right:20px;
+}
+
+#admin .input-btn {
+    margin:20px;
+    padding:5px;
+}
+
